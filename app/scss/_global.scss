@@ -1,0 +1,42 @@
+body{
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  line-height: 27px;
+}
+html,
+body {
+  height: 100%;
+}
+.container{
+  max-width: 1390px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.title{
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  position: relative;
+  transition: all .2s;
+  &::after {
+    content: '';
+    background-image: url('../images/arrow-right-black.svg');
+    height: 22px;
+    width: 15px;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -25px;
+    top: 7px;
+  }
+  &:hover {
+    opacity: 50%;
+  }
+}
