@@ -19,16 +19,19 @@
       <a class="logo" href="#">
         <img class="logo__img" src="images/logo.svg" alt="logo img">
       </a>
+      <button class="header-top__btn">
+        <span></span>
+      </button>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Products</a>
+            <a href="#products" class="menu__list-link">Products</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Templates</a>
+            <a href="#templates" class="menu__list-link">Templates</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Resources</a>
+            <a href="#questions" class="menu__list-link">Questions</a>
           </li>
         </ul>
       </nav>
@@ -41,14 +44,16 @@
   </div>  
   <div class="header-content">
     <div class="container">
-      <div class="header-content__box">
-        <span>Sell Online</span>
-        <span>Member Areas</span>
+      <div class="header-content__wrapper">
+        <div class="header-content__box">
+          <span>Sell Online</span>
+          <span>Member Areas</span>
+        </div>
+        <h2 class="header-content__title">Create members‑only content.</h2>
+        <p class="header-content__text">Monetize your content with Member Areas. Add paid areas to an existing Squarespace site or build a new one with our
+        award-winning templates.</p>
+        <a href="#" class="header-content__btn">Get Started</a>
       </div>
-      <h2 class="header-content__title">Create members‑only content.</h2>
-      <p class="header-content__text">Monetize your content with Member Areas. Add paid areas to an existing Squarespace site or build a new one with our
-      award-winning templates.</p>
-      <button class="header-content__btn">Get Started</button>
     </div>
    </div>
   </header>
@@ -100,7 +105,7 @@
       <a class="video__link" href="#">Watch the Video</a>
     </div>
   </section>
-  <section class="content">
+  <section class="content" id="products">
     <div class="container">
       <h3 class="title content__title">
         Engage your audience with exclusive content.
@@ -109,7 +114,7 @@
         From virtual classes and workshops to newsletters, podcasts, and video series, Member Areas help you build, harness, and
         monetize the power of your online community.
       </p>
-      <div class="content__item">
+      <div class="content__item element-animation">
         <div class="content__item-box">
           <h4 class="content__item-title">
             Promote premium content.
@@ -121,7 +126,7 @@
         </div>
         <img class="content__item-img" src="images/content-1.jpg" alt="">
       </div>
-      <div class="content__item">
+      <div class="content__item element-animation">
         <img class="content__item-img" src="images/content-2.jpg" alt="">
         <div class="content__item-box">
           <h4 class="content__item-title">
@@ -133,7 +138,7 @@
           </p>
         </div>
       </div>
-      <div class="content__item">
+      <div class="content__item element-animation">
         <div class="content__item-box">
           <h4 class="content__item-title">
             Build a community.
@@ -145,7 +150,7 @@
         </div>
         <img class="content__item-img" src="images/content-3.jpg" alt="">
       </div>
-      <div class="content__item">
+      <div class="content__item element-animation">
         <img class="content__item-img" src="images/content-4.jpg" alt="">
         <div class="content__item-box">
           <h4 class="content__item-title">
@@ -193,7 +198,7 @@
     </div>
    </div>
   </section>
-  <section class="templates">
+  <section class="templates" id="templates">
     <h4 class="title templates__title">
       Pick your starting point.
     </h4>
@@ -212,34 +217,23 @@
         </span>
       </div>
       <div class="templates-slider__item">
-        <img class="templates-slider__item-img" src="images/templates-slider-1.jpg" alt="">
+        <img class="templates-slider__item-img" src="images/content-3.jpg" alt="">
         <span class="templates-slider__item-text">
           Grow Well
         </span>
       </div>
       <div class="templates-slider__item">
-        <img class="templates-slider__item-img" src="images/templates-slider-1.jpg" alt="">
+        <img class="templates-slider__item-img" src="images/content-2.jpg" alt="">
         <span class="templates-slider__item-text">
           Myhra
         </span>
       </div>
       <div class="templates-slider__item">
-        <img class="templates-slider__item-img" src="images/templates-slider-1.jpg" alt="">
+        <img class="templates-slider__item-img" src="images/content-1.jpg" alt="">
         <span class="templates-slider__item-text">
           Grow Well
         </span>
       </div>
-      <div class="templates-slider__item">
-        <img class="templates-slider__item-img" src="images/templates-slider-1.jpg" alt="">
-        <span class="templates-slider__item-text">
-          Myhra
-        </span>
-      </div>
-      <div class="templates-slider__item">
-        <img class="templates-slider__item-img" src="images/templates-slider-1.jpg" alt="">
-        <span class="templates-slider__item-text">
-          Grow Well
-        </span>
       </div>
     </div>
     </div>
@@ -254,18 +248,21 @@
         <a class="start__link link-arrow" href="#">Get Started</a>
       </div>
         <ol class="start__items">
+          <li class="start__item">Create a website with Squarespace, and decide on a name for your member area.</li>
           <li class="start__item">Add members-only content, from classes to newsletters, guides to videos.</li>
           <li class="start__item">Customize your member area landing and sign-up page with details about what you offer.</li>
-          <li class="start__item">Create a website with Squarespace, and decide on a name for your member area.</li>
           <li class="start__item">Connect your preferred processor so you can start receiving fees.</li>
           <li class="start__item">Add a Member Areas subscription to your existing Squarespace website plan.</li>
         </ol>
       </div>
     </div>
   </section>
+
+
+
   <section class="pricing">
     <div class="container">
-      <h4 class="title pricing__title">
+      <h4 class="pricing__title">
         Pricing Plans
       </h4>
       <p class="pricing__subtitle">
@@ -399,36 +396,129 @@
       </div>
     </div>
   </section>
-  <section class="questions">
+  <section class="pricing-mobile">
+    <div class="container">
+      <h4 class="pricing__title">
+        Pricing Plans
+      </h4>
+      <p class="pricing__subtitle">
+        Pricing below is in addition to Squarespace website plans.
+      </p>
+      <div class="pricing__labels">
+        <div class="pricing__labels-box">
+          <input class="pricing__input" type="radio" name="pricing" id="pricing-year" checked>
+          <label class="pricing__label" for="pricing-year">
+            Pay Annually
+            <span>(Save up to 13%)</span>
+          </label>
+        </div>
+        <div class="pricing__labels-box">
+          <input class="pricing__input" type="radio" name="pricing" id="pricing-month">
+          <label class="pricing__label" for="pricing-month">
+            Pay Monthly
+          </label>
+        </div>
+      </div>
+      <div class="pricing__wrapper">
+          <ul class="pricing__item">
+            <li class="pricing__item-title">Starter</li>
+            <li class="pricing__item-num"><sup>$</sup>9</li>
+            <li class="pricing__item-text">per month</li>
+            <li class="pricing__item-percent">Save 10% annually</li>
+            <li class="pricing__item-prop">1 number of member areas</li>
+            <li class="pricing__item-prop">Transaction fee 7%</li>
+            <li class="pricing__item-prop">Unlimited members</li>
+            <li class="pricing__item-prop">No ads or Squarespace branding</li>
+            <li class="pricing__item-prop">Offer discounts and promotions</li>
+          </ul>
+          <ul class="pricing__item">
+            <li class="pricing__item-title">Core</li>
+            <li class="pricing__item-num"><sup>$</sup>18</li>
+            <li class="pricing__item-text">per month</li>
+            <li class="pricing__item-percent">Save 10% annually</li>
+            <li class="pricing__item-prop">3 numbers of member areas</li>
+            <li class="pricing__item-prop">Transaction fee 4%</li>
+            <li class="pricing__item-prop">Unlimited members</li>
+            <li class="pricing__item-prop">No ads or Squarespace branding</li>
+            <li class="pricing__item-prop">Offer discounts and promotions</li>
+          </ul>
+          <ul class="pricing__item">
+            <li class="pricing__item-title">Pro</li>
+            <li class="pricing__item-num"><sup>$</sup>35</li>
+            <li class="pricing__item-text">per month</li>
+            <li class="pricing__item-percent">Save 13% annually</li>
+            <li class="pricing__item-prop">10 numbers of member areas</li>
+            <li class="pricing__item-prop">Transaction fee 1%</li>
+            <li class="pricing__item-prop">Unlimited members</li>
+            <li class="pricing__item-prop">No ads or Squarespace branding</li>
+            <li class="pricing__item-prop">Offer discounts and promotions</li>
+          </ul>
+      </div>
+      <div class="pricing__content">
+        <h4 class="pricing__content-title">
+          Features included with all plans
+        </h4>
+        <div class="pricing__content-inner">
+          <ul class="pricing__content-list">
+            <li class="pricing__content-item">Free, one-time, or recurring fee structure</li>
+            <li class="pricing__content-item">Seamless and secure member experience</li>
+            <li class="pricing__content-item">Member management</li>
+            <li class="pricing__content-item">Integrated analytics</li>
+          </ul>
+          <ul class="pricing__content-list">
+            <li class="pricing__content-item">Members can pay with PayPal or credit card</li>
+            <li class="pricing__content-item">24/7 customer support</li>
+            <li class="pricing__content-item">Squarespace Extensions to manage your business</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="questions" id="questions">
     <div class="container">
       <h3 class="title questions__title">
         Frequently Asked Questions
       <h3/>
       <ul class="questions__list">
-        <li class="questions__item">
+        <li class="questions__item questions__item-1">
           Can I use Member Areas with any Squarespace website plan?
           <span></span>
         </li>
+        <p class="questions__item-1p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt omnis, iure molestiae eaque tempore vitae explicabo
+          placeat a ab provident ex. Molestiae ea aspernatur quibusdam quasi fugit inventore, qui in.
+        </p>
         <li class="questions__item questions__item-2">
           Do Member Areas integrate with Squarespace Email Campaigns?
           <span></span>
         </li>
-        <p class="questions__item-p">
-          Think of Squarespace as your very own IT department. Alongside unlimited hosting and enterprise-grade infrastructure, we
-          offer dedicated 24/7 support.
+        <p class="questions__item-2p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt omnis, iure molestiae eaque tempore vitae explicabo placeat a ab provident ex. Molestiae ea aspernatur quibusdam quasi fugit inventore, qui in.
         </p>
-        <li class="questions__item">
+        <li class="questions__item questions__item-3">
           Can I protect everything on my website?
           <span></span>
         </li>
-        <li class="questions__item">
+        <p class="questions__item-3p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt omnis, iure molestiae eaque tempore vitae explicabo
+          placeat a ab provident ex. Molestiae ea aspernatur quibusdam quasi fugit inventore, qui in.
+        </p>
+        <li class="questions__item questions__item-4">
           Can I create Member Areas but not charge a fee to users?
           <span></span>
         </li>
-        <li class="questions__item">
+        <p class="questions__item-4p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt omnis, iure molestiae eaque tempore vitae explicabo
+          placeat a ab provident ex. Molestiae ea aspernatur quibusdam quasi fugit inventore, qui in.
+        </p>
+        <li class="questions__item questions__item-5">
           Can I use Member Areas with a non-Squarespace website?
           <span></span>
         </li>
+        <p class="questions__item-5p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt omnis, iure molestiae eaque tempore vitae explicabo
+          placeat a ab provident ex. Molestiae ea aspernatur quibusdam quasi fugit inventore, qui in.
+        </p>
       </ul>
     </div>
   </section>
@@ -455,9 +545,9 @@
         <div class="free-trial__text">
           Squarespace is the all‑in‑one platform to build a beautiful website.
         </div>
-        <button class="free-trial__btn">
+        <a href="#" class="free-trial__btn">
           Start a Free Trial
-        </button>
+        </a>
       </div>
     </div>   
   </div>
@@ -480,70 +570,84 @@
             <span class="footer__button-text">English</span>
             <img class="footer__button-img" src="images/arrow-down.png" alt="">
           </div>
+          <div class="button-lang__box">
+            <p class="button-lang__text">Ukrainian</p>
+            <p class="button-lang__text">Espanol</p>
+          </div>
         </div>
         <div class="footer__list">
           <ul class="footer__item">
-            <li class="footer__item-title">Products</li>
-            <li class="footer__item-text">Website Templates</li>
-            <li class="footer__item-text">Websites</li>
-            <li class="footer__item-text">Domains</li>
-            <li class="footer__item-text">Online Stores</li>
-            <li class="footer__item-text">Point of Sale</li>
-            <li class="footer__item-text">Extensions</li>
-            <li class="footer__item-text">Marketing Tools</li>
-            <li class="footer__item-text">Email Marketing</li>
-            <li class="footer__item-text">Scheduling</li>
-            <li class="footer__item-text">Stories</li>
-            <li class="footer__item-text">Professional Email</li>
-            <li class="footer__item-text">Logo Maker</li>
-            <li class="footer__item-text">Enterprise</li>
-            <li class="footer__item-text">Pricing</li>
-            <li class="footer__item-text">Feature List</li>
+            <li class="footer__item-title footer__item-title--1">Products</li>
+            <div class="footer__item-box footer__item-box--1">
+              <li class="footer__item-text"><a href="#">Website Templates</a></li>
+              <li class="footer__item-text"><a href="#">Websites</a></li>
+              <li class="footer__item-text"><a href="#">Domains</a></li>
+              <li class="footer__item-text"><a href="#">Online Stores</a></li>
+              <li class="footer__item-text"><a href="#">Point of Sale</a></li>
+              <li class="footer__item-text"><a href="#">Extensions</a></li>
+              <li class="footer__item-text"><a href="#">Marketing Tools</a></li>
+              <li class="footer__item-text"><a href="#">Email Marketing</a></li>
+              <li class="footer__item-text"><a href="#">Scheduling</a></li>
+              <li class="footer__item-text"><a href="#">Stories</a></li>
+              <li class="footer__item-text"><a href="#">Professional Email</a></li>
+              <li class="footer__item-text"><a href="#">Logo Maker</a></li>
+              <li class="footer__item-text"><a href="#">Enterprise</a></li>
+              <li class="footer__item-text"><a href="#">Pricing</a></li>
+              <li class="footer__item-text"><a href="#">Feature List</a></li>
+            </div>
           </ul>
           <ul class="footer__item">
-            <li class="footer__item-title">Customers</li>
-            <li class="footer__item-text">Featured</li>
-            <li class="footer__item-text">Small Businesses</li>
-            <li class="footer__item-text">Photographers</li>
-            <li class="footer__item-text">Bloggers</li>
-            <li class="footer__item-text">Artists</li>
-            <li class="footer__item-text">Restaurants</li>
-            <li class="footer__item-text">Musicians</li>
-            <li class="footer__item-text">Weddings</li>
-            <li class="footer__item-text">Students</li>
+            <li class="footer__item-title footer__item-title--2">Customers</li>
+            <div class="footer__item-box footer__item-box--2">
+              <li class="footer__item-text"><a href="#">Featured</a></li>
+              <li class="footer__item-text"><a href="#">Small Businesses</a></li>
+              <li class="footer__item-text"><a href="#">Photographers</a></li>
+              <li class="footer__item-text"><a href="#">Bloggers</a></li>
+              <li class="footer__item-text"><a href="#">Artists</a></li>
+              <li class="footer__item-text"><a href="#">Restaurants</a></li>
+              <li class="footer__item-text"><a href="#">Musicians</a></li>
+              <li class="footer__item-text"><a href="#">Weddings</a></li>
+              <li class="footer__item-text"><a href="#">Students</a></li>
+            </div>
           </ul>
           <ul class="footer__item">
-            <li class="footer__item-title">Company</li>
-            <li class="footer__item-text">About</li>
-            <li class="footer__item-text">Careers</li>
-            <li class="footer__item-text">Our Brand</li>
-            <li class="footer__item-text">Affiliates</li>
-            <li class="footer__item-text">Press & Media</li>
-            <li class="footer__item-text">Terms of Service</li>
-            <li class="footer__item-text">Privacy Policy</li>
-            <li class="footer__item-text">Contact Us</li>
+            <li class="footer__item-title footer__item-title--3">Company</li>
+            <div class="footer__item-box footer__item-box--3">
+              <li class="footer__item-text"><a href="#">About</a></li>
+              <li class="footer__item-text"><a href="#">Careers</a></li>
+              <li class="footer__item-text"><a href="#">Our Brand</a></li>
+              <li class="footer__item-text"><a href="#">Affiliates</a></li>
+              <li class="footer__item-text"><a href="#">Press & Media</a></li>
+              <li class="footer__item-text"><a href="#">Terms of Service</a></li>
+              <li class="footer__item-text"><a href="#">Privacy Policy</a></li>
+              <li class="footer__item-text"><a href="#">Contact Us</a></li>
+            </div>
           </ul>
           <ul class="footer__item">
-            <li class="footer__item-title">Community</li>
-            <li class="footer__item-text">Help & Support</li>
-            <li class="footer__item-text">Hire an Expert</li>
-            <li class="footer__item-text">Forum</li>
-            <li class="footer__item-text">Webinars</li>
-            <li class="footer__item-text">Developer Platform</li>
-            <li class="footer__item-text">Circle</li>
+            <li class="footer__item-title footer__item-title--4">Community</li>
+            <div class="footer__item-box footer__item-box--4">
+              <li class="footer__item-text"><a href="#">Help & Support</a></li>
+              <li class="footer__item-text"><a href="#">Hire an Expert</a></li>
+              <li class="footer__item-text"><a href="#">Forum</a></li>
+              <li class="footer__item-text"><a href="#">Webinars</a></li>
+              <li class="footer__item-text"><a href="#">Developer Platform</a></li>
+              <li class="footer__item-text"><a href="#">Circle</a></li>
+            </div>
           </ul>
           <ul class="footer__item">
-            <li class="footer__item-title">Follow</li>
-            <li class="footer__item-text">Newsroom</li>
-            <li class="footer__item-text">Squarespace Blog</li>
-            <li class="footer__item-text">Creative Blog</li>
-            <li class="footer__item-text">Engineering Blog</li>
-            <li class="footer__item-text">Service Status</li>
-            <li class="footer__item-text">Instagram</li>
-            <li class="footer__item-text">YouTube</li>
-            <li class="footer__item-text">LinkedIn</li>
-            <li class="footer__item-text">Facebook</li>
-            <li class="footer__item-text">Twitter</li>
+            <li class="footer__item-title footer__item-title--5">Follow</li>
+            <div class="footer__item-box footer__item-box--5">
+              <li class="footer__item-text"><a href="#">Newsroom</a></li>
+              <li class="footer__item-text"><a href="#">Squarespace Blog</a></li>
+              <li class="footer__item-text"><a href="#">Creative Blog</a></li>
+              <li class="footer__item-text"><a href="#">Engineering Blog</a></li>
+              <li class="footer__item-text"><a href="#">Service Status</a></li>
+              <li class="footer__item-text"><a href="#">Instagram</a></li>
+              <li class="footer__item-text"><a href="#">YouTube</a></li>
+              <li class="footer__item-text"><a href="#">LinkedIn</a></li>
+              <li class="footer__item-text"><a href="#">Facebook</a></li>
+              <li class="footer__item-text"><a href="#">Twitter</a></li>
+            </div>
           </ul>
         </div>
       </div>

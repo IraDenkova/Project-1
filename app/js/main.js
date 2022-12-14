@@ -16,14 +16,109 @@ $(function () {
 
   $('.templates-slider__inner').slick({
     arrows: false,
-    slidesToShow: 3
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 741,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+    }]
+  });
+
+  $('.menu a').on('click', function () {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, {
+      duration: 800,   
+      easing: "linear" 
+    });
+
+    return false;
+  });
+
+  $('.questions__item-1').on('click', function () {
+    $('.questions__item-1p').slideToggle()
   });
 
   $('.questions__item-2').on('click', function () {
-    $('.questions__item-p').slideToggle()
-  })
+    $('.questions__item-2p').slideToggle()
+  });
+
+  $('.questions__item-3').on('click', function () {
+    $('.questions__item-3p').slideToggle()
+  });
+
+  $('.questions__item-4').on('click', function () {
+    $('.questions__item-4p').slideToggle()
+  });
+
+  $('.questions__item-5').on('click', function () {
+    $('.questions__item-5p').slideToggle()
+  });
+
+  $('.questions__item').on('click', function () {
+    $(this).toggleClass('questions__item--active');
+  });
+
 
   $('.button-currency').on('click', function () {
     $('.button-currency__box').slideToggle()
   })
+
+  $('.button-lang').on('click', function () {
+    $('.button-lang__box').slideToggle()
+  })
+
+  $('.header-top__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active')
+  });
+
+
+  $('.footer__item-title--1').on('click', function () {
+    $('.footer__item-box--1').slideToggle()
+  });
+
+  $('.footer__item-title--2').on('click', function () {
+    $('.footer__item-box--2').slideToggle()
+  });
+
+  $('.footer__item-title--3').on('click', function () {
+    $('.footer__item-box--3').slideToggle()
+  });
+
+  $('.footer__item-title--4').on('click', function () {
+    $('.footer__item-box--4').slideToggle()
+  });
+
+  $('.footer__item-title--5').on('click', function () {
+    $('.footer__item-box--5').slideToggle()
+  });
+
 });
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    }
+  });
+}
+let options = { threshold: [0.0] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+  observer.observe(elm);
+}

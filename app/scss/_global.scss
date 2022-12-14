@@ -1,29 +1,28 @@
 body{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #000;
-  line-height: 27px;
+  line-height: 20px;
 }
 html,
 body {
   height: 100%;
 }
 .container{
-  max-width: 1390px;
+  max-width: 1470px;
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 .title{
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 50px;
+  line-height: 51px;
 }
-
 .link-arrow {
   text-transform: uppercase;
   border-bottom: 1px solid #000;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   transition: all .2s;
   &::after {
